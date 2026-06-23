@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-investor-reporting",
-  "version": "1.0.0",
-  "description": "Investor & Board Reporting — Generate quarterly board decks and investor updates from financial, CRM, and HR data",
+  "version": "1.0.1",
+  "description": "Investor & Board Reporting \u2014 Generate quarterly board decks and investor updates from financial, CRM, and HR data",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-investor-reporting",
   "homepage": "https://cortexprism.io/marketplace/plugins/investor-reporting",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "investor_generate_deck",
@@ -21,10 +24,25 @@
       "description": "Summarize financial performance",
       "params": []
     },
-    { "name": "investor_kpi_dashboard", "description": "Build KPI dashboard", "params": [] },
-    { "name": "investor_narrative", "description": "Generate strategic narrative", "params": [] }
+    {
+      "name": "investor_kpi_dashboard",
+      "description": "Build KPI dashboard",
+      "params": []
+    },
+    {
+      "name": "investor_narrative",
+      "description": "Generate strategic narrative",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
